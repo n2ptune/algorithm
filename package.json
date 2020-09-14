@@ -1,0 +1,9 @@
+{
+  "name": "leetcode-algorithm",
+  "version": "1.0.0",
+  "description": "Learning record for algorithm problems in leetcode",
+  "main": "index.js",
+  "repository": "https://github.com/n2ptune/leetcode-algorithm",
+  "author": "n2ptune <n2ptune@outlook.com>",
+  "license": "MIT"
+}

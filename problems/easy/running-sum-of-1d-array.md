@@ -4,7 +4,7 @@
 
 ## 1480. Running Sum of 1d Array
 
-`nums` 배열이 주어지고 `nums` 배열과 길이가 같은 배열을 반환해야한다. 그 배열의 i번째 원소는 nums의 i번째 원소의 값과 그 이전 값들을 더한 값이어야 한다. 아래는 예시로 주어진 입력과 출력 값이다.
+원문: [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) `nums` 배열이 주어지고 `nums` 배열과 길이가 같은 배열을 반환해야한다. 그 배열의 i번째 원소는 nums의 i번째 원소의 값과 그 이전 값들을 더한 값이어야 한다. 아래는 예시로 주어진 입력과 출력 값이다.
 
 ```js
 Input: nums = [1, 2, 3, 4]

@@ -1,7 +1,21 @@
-const template = `| Time Submmited | Status | Runtime | Memory | Language |
+const tableTemplate = `| Time Submmited | Status | Runtime | Memory | Language |
 | --- | --- | --- | --- | --- |
 | - | - | - | - | - |
 
 ##`
 
-module.exports = template
+const commandHelp = `
+
+===============================================================
+Command   Property  Value             Required  Default
+
+gen:md    level     easy,medium,hard  true      -
+          title     [string]          false     default.md
+===============================================================
+
+`
+
+module.exports = {
+  tableTemplate,
+  commandHelp
+}

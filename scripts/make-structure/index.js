@@ -1,10 +1,9 @@
 const levelWrap = process.argv.filter((item) => item.startsWith('level'))[0]
 const titleWrap = process.argv.filter((item) => item.startsWith('title'))[0]
+const { onError } = require('./error')
 
 if (!levelWrap) {
-  throw new Error(
-    'The level is required and must be one of Easy, Medium, and Hard.'
-  )
+  return onError('The level is required and must be one of Easy, Medium, and Hard.')
 }
 
 const level = levelWrap.split('=')[1]
@@ -25,7 +24,7 @@ const fs = require('fs')
 const path = require('path')
 const problemPath = path.resolve(__dirname, '../', '../', 'problems', level)
 const prettier = require('prettier')
-const template = require('./template')
+const { tableTemplate: template } = require('./template')
 
 const lintedStructure = prettier.format(template, { parser: 'markdown' })
 
@@ -36,7 +35,7 @@ try {
 
   fs.writeFileSync(`${problemPath}/${title}`, lintedStructure, {
     flag: 'w',
-    encoding: 'utf-8',
+    encoding: 'utf-8'
   })
 } catch (error) {
   throw new Error(error)

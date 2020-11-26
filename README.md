@@ -1,16 +1,7 @@
-# leetcode-algorithm
+# Algorithm
 
-[leetcode](https://leetcode.com)에서 푼 알고리즘 문제들을 복습하고 기록하기 위한 저장소
+알고리즘 학습하기 세 곳에서 학습 ([프로그래머스](https://programmers.co.kr), [백준 온라인 저지](https://acmicpc.net), [leetcode](https://leetcode.com))
 
-- 문제는 난이도로 분류해서 서로 다른 폴더에 정리한다.
-- 파일 이름은 문제의 이름으로 한다. 
+## 문제
 
-## Solved problems
-
-제출해서 맞추었던 문제들을 정리해서 기록한다.
-
-### Easy
-
-### Medium
-
-### Hard
+해결했던 모든 문제를 각 알고리즘 문제 사이트에 맞는 폴더에 제목 혹은 난이도별로 분류해서 저장하기.

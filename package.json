@@ -1,8 +1,7 @@
 {
-  "name": "leetcode-algorithm",
+  "name": "algorithm",
   "version": "1.0.0",
-  "description": "Learning record for algorithm problems in leetcode",
-  "main": "index.js",
+  "description": "Learning record for algorithm problems in leetcode, boj, books, etc...",
   "repository": "https://github.com/n2ptune/leetcode-algorithm",
   "author": "n2ptune <n2ptune@outlook.com>",
   "license": "MIT",

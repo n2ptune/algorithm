@@ -3,7 +3,9 @@ const titleWrap = process.argv.filter((item) => item.startsWith('title'))[0]
 const { onError } = require('./error')
 
 if (!levelWrap) {
-  return onError('The level is required and must be one of Easy, Medium, and Hard.')
+  return onError(
+    'The level is required and must be one of Easy, Medium, and Hard.'
+  )
 }
 
 const level = levelWrap.split('=')[1]
@@ -22,7 +24,14 @@ switch (level) {
 
 const fs = require('fs')
 const path = require('path')
-const problemPath = path.resolve(__dirname, '../', '../', 'problems', level)
+const problemPath = path.resolve(
+  __dirname,
+  '../',
+  '../',
+  'problems',
+  'leetcode',
+  level
+)
 const prettier = require('prettier')
 const { tableTemplate: template } = require('./template')
 

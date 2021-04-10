@@ -7,9 +7,5 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "^2.2.1"
-  },
-  "scripts": {
-    "gen:md": "node ./scripts/make-structure",
-    "update": "node ./scripts/update"
   }
 }

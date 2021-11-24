@@ -1,0 +1,1 @@
+print(' '.join(list(map(str, list(sorted(input().split(' ')))))))

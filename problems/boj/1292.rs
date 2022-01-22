@@ -11,6 +11,17 @@ fn main() {
     let mut i = 1;
 
     loop {
-      for l in 
+        if v.len() >= nums.1 as usize {
+            break;
+        }
+
+        for _ in 0..i {
+            v.push(i);
+        }
+
+        i += 1;
     }
+
+    let vb: i32 = v[(nums.0 - 1) as usize..nums.1 as usize].iter().sum();
+    println!("{}", vb);
 }

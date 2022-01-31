@@ -1,23 +1,12 @@
-use std::fs::File;
-use std::io::prelude::*;
+use std::fs;
 use std::path::Path;
 
+fn parse_boj_file_name() {}
+
 fn main() {
-    let path = Path::new("hello.txt");
-    let display = path.display();
+    let paths = fs::read_dir("../problems/boj").unwrap();
 
-    // Open the path in read-only mode, returns `io::Result<File>`
-    let mut file = match File::open(&path) {
-        Err(why) => panic!("couldn't open {}: {}", display, why),
-        Ok(file) => file,
-    };
-
-    // Read the file contents into a string, returns `io::Result<usize>`
-    let mut s = String::new();
-    match file.read_to_string(&mut s) {
-        Err(why) => panic!("couldn't read {}: {}", display, why),
-        Ok(_) => print!("{} contains:\n{}", display, s),
+    for path in paths {
+        println!("{}", path.unwrap().path().display());
     }
-
-    // `file` goes out of scope, and the "hello.txt" file gets closed
 }

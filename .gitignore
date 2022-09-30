@@ -1,3 +1,7 @@
 node_modules
 .vscode
 .prettierrc
+
+# Added by cargo
+
+/target

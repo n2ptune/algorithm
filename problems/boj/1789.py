@@ -1,15 +1,15 @@
 import sys
+
 read = sys.stdin.readline
 
-n = 0
+ans = 0
 c = 0
 S = int(read())
 
-for i in range(1, S):
-  n += i
+for i in range(0, S):
+  ans += (i + 1)
   c += 1
-  if n > S:
+  if ans > S:
     c -= 1
     break
-
 print(c)

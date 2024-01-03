@@ -1,10 +1,10 @@
 use std::io;
 
 fn main() {
-    solve_11582();
+    solve_11382();
 }
 
-fn solve_11582() {
+fn solve_11382() {
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("");
 

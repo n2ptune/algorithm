@@ -1,3 +1,19 @@
+use std::io;
+
 fn main() {
-    println!("Hello, world!");
+    solve_11582();
+}
+
+fn solve_11582() {
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("");
+
+    let numbers: Vec<u128> = input
+        .split_whitespace()
+        .map(|s| s.parse::<u128>())
+        .filter_map(Result::ok)
+        .collect();
+    let sum: u128 = numbers.iter().sum();
+
+    println!("{}", sum);
 }

@@ -13,4 +13,6 @@ class Solution:
           else:
             su = su.split(ch)[1] + ch
 
-print(Solution().lengthOfLongestSubstring('abcabcbb'))
+        return ans
+
+print(Solution().lengthOfLongestSubstring('babc'))

@@ -1,7 +1,0 @@
-{
-  "include": ["problems/**/*.js"],
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "CommonJS"
-  }
-}
